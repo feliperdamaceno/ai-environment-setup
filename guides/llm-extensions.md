@@ -2,7 +2,7 @@
 
 ## VS Code Extensions
 
-This setup in requires two distinct extensions:
+This setup requires two distinct extensions:
 
 ### Continue
 
