@@ -1,0 +1,26 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+models:
+  - name: deepseek-coder
+    provider: ollama
+    model: deepseek-coder:6.7b-instruct-q4_0
+  - name: qwen2.5-coder
+    provider: ollama
+    model: qwen2.5-coder:3b-base-q4_0
+    roles:
+      - autocomplete
+    parameters:
+      max_new_tokens: 512
+      temperature: 0.2
+      top_p: 0.95
+      top_k: 50
+      stop: []
+context:
+  - provider: code
+  - provider: docs
+  - provider: diff
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+  - provider: codebase
