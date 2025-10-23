@@ -64,18 +64,18 @@ You can create shell aliases for convenience (add to `~/.bashrc` or `~/.zshrc`)
 and reload the shell:
 
 ```
-alias llm-deepseek='llm -m deepseek-coder:6.7b-instruct-q4_0'
+alias deepseek='llm -m deepseek-r1:8b'
 
 # and
 
-alias llm-qwen='llm -m qwen2.5-coder:3b-base-q4_0'
+alias qwen='llm -m qwen2.5-coder:7b-instruct-q4_0'
 ```
 
 To start chatting or run a command use:
 
 ```
-llm-deepseek
-llm-qwen
+deepseek
+qwen
 ```
 
 #### Running Prompts
@@ -83,7 +83,7 @@ llm-qwen
 With the setup ready, you can run a prompt like this:
 
 ```
-find . -type f -name "*.js" | llm-deepseek "Which of these files contain 'main' function?"
+find . -type f -name "*.ts" | deepseek "Which of these files contain 'main' function?"
 ```
 
 ### Notes

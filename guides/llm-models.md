@@ -31,11 +31,11 @@ To install models use the `ollama pull` command.
 Required models:
 
 ```
-ollama pull deepseek-coder:6.7b-instruct-q4_0
+ollama pull deepseek-r1:8b
 
 # and
 
-ollama pull qwen2.5-coder:3b-base-q4_0
+ollama pull qwen2.5-coder:7b-instruct-q4_0
 ```
 
 Check the installed models with:
@@ -51,11 +51,11 @@ ollama list
 After installation, you can run the models locally:
 
 ```
-ollama run deepseek-coder:6.7b-instruct-q4_0
+ollama run deepseek-r1:8b
 
 # and
 
-ollama run qwen2.5-coder:3b-base-q4_0
+ollama run qwen2.5-coder:7b-instruct-q4_0
 ```
 
 ---

@@ -2,12 +2,12 @@ name: Local Config
 version: 1.0.0
 schema: v1
 models:
-  - name: deepseek-coder
+  - name: deepseek-r1
     provider: ollama
-    model: deepseek-coder:6.7b-instruct-q4_0
+    model: deepseek-r1:8b
   - name: qwen2.5-coder
     provider: ollama
-    model: qwen2.5-coder:3b-base-q4_0
+    model: qwen2.5-coder:7b-instruct-q4_0
     roles:
       - autocomplete
     parameters:

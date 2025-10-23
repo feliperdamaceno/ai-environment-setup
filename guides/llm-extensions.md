@@ -17,5 +17,5 @@ linting, formatting features and more. Once installed, you can copy
 [Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev)
 is a VSCode extension that provides multi-file editing features as well as
 running commands from the Command Line Interface (CLI). Once installed, head
-over to the extension settings and configure to use
-`deepseek-coder:6.7b-instruct-q4_0` model from **Ollama**.
+over to the extension settings and configure to use `deepseek-r1:8b` model from
+**Ollama**.
