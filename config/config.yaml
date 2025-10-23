@@ -1,21 +1,41 @@
 name: Local Config
 version: 1.0.0
 schema: v1
+
 models:
   - name: deepseek-r1
     provider: ollama
     model: deepseek-r1:8b
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 120000
+      maxTokens: 16384
+      temperature: 0.2
+      topP: 0.95
+      topK: 50
+      stop: []
+    requestOptions:
+      timeout: 300
+      verifySsl: true
+
   - name: qwen2.5-coder
     provider: ollama
     model: qwen2.5-coder:7b-instruct-q4_0
     roles:
       - autocomplete
-    parameters:
-      max_new_tokens: 512
+    defaultCompletionOptions:
+      maxTokens: 1024
       temperature: 0.2
-      top_p: 0.95
-      top_k: 50
+      topP: 0.95
+      topK: 50
       stop: []
+    requestOptions:
+      timeout: 180
+      verifySsl: true
+
 context:
   - provider: code
   - provider: docs
