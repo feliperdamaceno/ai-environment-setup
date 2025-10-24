@@ -5,14 +5,14 @@ schema: v1
 models:
   - name: deepseek-r1
     provider: ollama
-    model: deepseek-r1:8b-llama-distill-q4_K_M
+    model: deepseek-r1:7b-qwen-distill-q4_K_M
     roles:
       - chat
       - edit
       - apply
     defaultCompletionOptions:
-      contextLength: 120000
-      maxTokens: 16384
+      contextLength: 64000
+      maxTokens: 4096
       temperature: 0.2
       topP: 0.95
       topK: 50

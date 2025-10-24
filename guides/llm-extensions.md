@@ -18,4 +18,4 @@ linting, formatting features and more. Once installed, you can copy
 is a VSCode extension that provides multi-file editing features as well as
 running commands from the Command Line Interface (CLI). Once installed, head
 over to the extension settings and configure to use
-`deepseek-r1:8b-llama-distill-q4_K_M` model from **Ollama**.
+`deepseek-r1:7b-qwen-distill-q4_K_M` model from **Ollama**.

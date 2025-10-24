@@ -64,7 +64,7 @@ You can create shell aliases for convenience (add to `~/.bashrc` or `~/.zshrc`)
 and reload the shell:
 
 ```
-alias deepseek='llm -m deepseek-r1:8b-llama-distill-q4_K_M'
+alias deepseek='llm -m deepseek-r1:7b-qwen-distill-q4_K_M'
 
 # and
 

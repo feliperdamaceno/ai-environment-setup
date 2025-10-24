@@ -31,7 +31,7 @@ To install models use the `ollama pull` command.
 Required models:
 
 ```
-ollama pull deepseek-r1:8b-llama-distill-q4_K_M
+ollama pull deepseek-r1:7b-qwen-distill-q4_K_M
 
 # and
 
@@ -51,7 +51,7 @@ ollama list
 After installation, you can run the models locally:
 
 ```
-ollama run deepseek-r1:8b-llama-distill-q4_K_M
+ollama run deepseek-r1:7b-qwen-distill-q4_K_M
 
 # and
 
